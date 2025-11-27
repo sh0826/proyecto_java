@@ -63,7 +63,7 @@ public class LoginBean {
                 
                 String rootPath = FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
                 System.out.println(rootPath);
-                FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + dir + "/index.xhtml");
+                FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + dir + "/login.xhtml");
                 FacesContext.getCurrentInstance().responseComplete();
             }else{
                 FacesContext.getCurrentInstance().getExternalContext().redirect("error.xhtml");
@@ -76,7 +76,7 @@ public class LoginBean {
         FacesContext.getCurrentInstance().getExternalContext().getSessionMap().clear();
         String rootPath = FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + "/faces/index.xhtml");
+            FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + "/faces/login.xhtml");
         } catch (IOException e) {
         }
     }
