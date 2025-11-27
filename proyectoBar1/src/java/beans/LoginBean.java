@@ -63,10 +63,10 @@ public class LoginBean {
                 
                 String rootPath = FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
                 System.out.println(rootPath);
-                FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + dir + "/login.xhtml");
+                FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + dir + "/index.xhtml");
                 FacesContext.getCurrentInstance().responseComplete();
             }else{
-                FacesContext.getCurrentInstance().getExternalContext().redirect("error.xhtml");
+                FacesContext.getCurrentInstance().getExternalContext().redirect("/inicio_sesion/error.xhtml");
             }            
         } catch (SQLException | IOException e) {
         }        
@@ -76,7 +76,7 @@ public class LoginBean {
         FacesContext.getCurrentInstance().getExternalContext().getSessionMap().clear();
         String rootPath = FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
         try {
-            FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + "/faces/login.xhtml");
+            FacesContext.getCurrentInstance().getExternalContext().redirect(rootPath + "/faces/inicio_sesion/login.xhtml");
         } catch (IOException e) {
         }
     }
@@ -87,13 +87,13 @@ public class LoginBean {
         
         if(nom == null){
             try {
-                FacesContext.getCurrentInstance().getExternalContext().redirect("sinacceso.xhtml");
+                FacesContext.getCurrentInstance().getExternalContext().redirect("inicio_sesion/sinacceso.xhtml");
             } catch (IOException e) {
             }
         }else{
             if(!tipo.equals(t)){
                 try {
-                    FacesContext.getCurrentInstance().getExternalContext().redirect("sinacceso.xhtml");
+                    FacesContext.getCurrentInstance().getExternalContext().redirect("inicio_sesion/sinacceso.xhtml");
                 } catch (IOException e) {
                 }
             }else{
