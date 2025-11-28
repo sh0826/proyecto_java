@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/sharo/OneDrive/Documentos/NetBeansProjects/proyectoBar1/web/empl.xhtml</file>
-            <file>file:/C:/Users/sharo/OneDrive/Documentos/NetBeansProjects/proyectoBar1/web/index.xhtml</file>
+            <file>file:/C:/Users/sharo/OneDrive/Documentos/GitHub/proyecto_java/proyectoBar1/web/inicio_sesion/crear_cliente.xhtml</file>
+            <file>file:/C:/Users/sharo/OneDrive/Documentos/GitHub/proyecto_java/proyectoBar1/web/inicio_sesion/login.xhtml</file>
+            <file>file:/C:/Users/sharo/OneDrive/Documentos/GitHub/proyecto_java/proyectoBar1/src/java/beans/LoginBean.java</file>
+            <file>file:/C:/Users/sharo/OneDrive/Documentos/GitHub/proyecto_java/proyectoBar1/src/java/beans/UsuarioBean.java</file>
+            <file>file:/C:/Users/sharo/OneDrive/Documentos/GitHub/proyecto_java/proyectoBar1/src/java/dao/UsuarioDAO.java</file>
         </group>
     </open-files>
 </project-private>
